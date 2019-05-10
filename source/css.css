@@ -1,0 +1,470 @@
+body{
+    background-color: #f1f1f1;
+    margin: 0;
+    font-family: Tahoma;  
+}
+header{
+    background-color: #2186C4 ;
+    position: fixed;
+    z-index:4;
+    top:0;
+    left:0; 
+    right: 0;
+    
+ }
+ .navbar{
+     margin: 0;
+     padding: 0;
+ }
+#header-content{
+    /* background-color: #2186C4; */
+  /* left: 0; */
+    /* right:0; */
+    margin: auto;
+}
+#header-content img{
+    width: 100px;
+    height:auto;
+    /* float: left; */
+}
+header ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-family: Tahoma;  
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+header ul{
+    list-style: none;
+    float: right !important;
+    padding: 0;
+    margin: 0;
+
+}
+header ul li{
+    float: left;
+}
+.dropdown ul li{
+    float: none;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color:#2186C4 ;
+
+}
+header ul li:hover .dropdown{
+    display: block;
+}
+header .dropdown ul li a{
+    width: 150px;
+    text-align: left;
+    font-size: 13px; 
+    
+}
+
+ .clear-float{
+     clear: both;
+ }
+.float-left{
+    float: left ;
+}
+.float-right{
+    float: right ;
+}
+header ul li a:hover{
+    color: white ;
+    background-color: rgb(85, 87, 88);
+    text-decoration: none;
+}
+#section-content{
+    margin-top: 15px;
+}
+.home .img-slider{
+    position: relative;
+}
+
+.sanpham .button{
+    padding-left: 10px;
+    padding-right:10px;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    width: 100%;
+    z-index: 2;
+}
+.sanpham .button button{
+    border: none;
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+}
+.home .home-news{
+    padding-left: 10px;
+    margin:0 -15px;
+    /* height: 300px; */
+    /* width: 370px; */
+    background-color: rgb(199, 247, 247);
+
+}
+.home .home-news  ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Tahoma;     
+    color: #2186C4;
+}
+.home .home-news ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+.home .home-news ul li{
+    margin: 10px 0;
+    border-bottom: 1px solid white;
+}
+.home .home-news .scrollbar{
+    overflow-y: scroll;
+    height:230px;
+}
+.home .home-news h3{
+    color: rgb(92, 89, 89);
+    text-align: center;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 186, 189); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 87, 88); 
+}
+#section-content{
+    margin-top:80px;
+}
+#section-content .info{
+    position: relative;
+    margin-top: 20px;
+    background-color:white;
+   
+}
+#section-content .hinh-quangcao{
+    margin-top:20px;
+}
+
+#section-content .info h2{
+    color:white;
+    float: left;
+    font-size: 18px;
+    padding:15px;
+    background-color: rgb(85, 87, 88);
+    margin:0;
+    /* width: 180px; */
+}
+#section-content .info h4{
+    float:left;
+    color: #2186C4;
+    font-size: 16px;
+    padding:16px 0 7px 10px;
+}
+.info .sanpham {
+    position: relative;
+    background-color: white;
+    
+}
+.sanpham .item{
+    padding:10px 20px;
+    /* margin-bottom:1px; */
+    border:1px #f1f1f1 solid;
+    
+ 
+}
+.sanpham .item .info-hidden{
+    position: absolute;
+    top:0;
+    width: 88%;
+    height: 100%;
+    padding-right: 10px;
+    background-color:white;
+    display: none;
+    box-sizing: border-box
+ }
+.thongso{
+    padding:0;
+    margin:0;
+    margin-left: 10px;
+    font-size:15px;
+}
+
+.sanpham .item:hover .info-hidden{
+        
+    display: block;
+}
+.sanpham .item img{
+    width: 80%;
+    height: auto;
+}
+.sanpham .item .name{
+    padding: 10px 0 0 10px;
+    margin: 0; 
+    font-size: 14px;
+} 
+.gia{
+margin: 0;
+padding: 0 0 0 10px;
+font-size: 18px;
+color: red;
+}
+.row a{
+    color:black;
+}
+#section-content .info .header-infor{
+    margin-bottom: 10px;
+    background-color: #ced4da;
+    
+    
+}
+#section-content .info .sanpham{
+    margin-top: 10px;
+    position: relative;
+}
+footer{
+    background-color:#2186C4;
+    color:white;
+    padding-bottom: 20px;
+}
+
+#footer-content .footer-item{
+    margin-top: 20px;        
+    font-size: 12px;   
+}
+#footer-content .footer-item .item h5{
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: Tahoma;  
+    text-transform: uppercase;
+}
+.sdt{
+    color: red;
+    font-size: 15px;
+}
+#footer-content .footer-item .item .logo-png img{
+ margin: 5px 12px 5px 0;
+}
+.sanpham .carousel-control-prev-icon,.sanpham .carousel-control-next-icon  {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 2;
+    top:15px;
+    right:100%;
+    
+}
+.sanpham .carousel-control-prev,
+ .sanpham .carousel-control-next {
+    width: 0%;
+    position: relative;
+    color: #fff;
+    opacity: 1;
+    float:right;
+
+ }
+  
+ .carousel-control-prev {
+    left: -40px;
+  }
+  
+  .carousel-control-next {
+    right: none;
+  }
+  
+
+.detail .detail-img img{
+    width: 400px;
+    height: auto;
+}
+.detail {
+    background-color: white;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.button-muangay{
+    background-color: #fd6e1d;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    margin-top:10px;
+    width:100%;
+
+}
+.button-muangay:hover{
+    color: #FF8066;
+    background-color: white;
+    border-radius: 5px;
+    border: #FF8066 1px solid;
+}
+.button-tragop:hover{
+    color: #288ad6;
+    background-color: white;
+    border-radius: 5px;
+    border: #288ad6 1px solid;
+}
+.button-tragop{
+    background-color: #288ad6;
+    border-radius: 5px;
+    text-align: center;
+    width:100%;
+
+    color:white;
+    margin-top:10px;
+}
+.fixed{
+    position: fixed;
+    z-index: 4;
+    margin:0;
+    padding:0;
+}
+.cart a{
+    text-decoration: none;
+    color:white;  
+    padding:8px 10px;
+    border: 1.5px solid white;
+    border-radius: 7%;
+}
+.cart a:hover{
+    background-color: rgb(85, 87, 88);
+}
+.search{
+    padding: 0.375rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.navbar-toggler{
+    background-color: white;
+    border: 1px solid white;  
+    font-size: 1.20rem;  
+}
+.btn-outline-success{
+    color: white;
+    border-color: white;
+    line-height: 1.2;
+}
+.btn-outline-success:hover {
+    background-color: rgb(85, 87, 88);
+    border-color: rgb(85, 87, 88);
+  }
+  #footer-content .item a{
+      color:white;
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 150px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none;  
+    color: #2186C4; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+  
+    background-color:transparent;
+}
+#myBtn:hover {
+   color: rgb(85, 87, 88);/* Add a dark-grey background on hover */
+}
+
+.detail .box1, .box2 {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size:13px;
+    color:#2186C4;
+}
+.detail .box2 p, .last-info .box-thongso p{
+    margin-bottom: 7px;
+    border-bottom: solid 1px #ced4da;
+}
+#section-content{
+    overflow: auto;
+}
+.last-info{
+    padding: 10px;
+    margin-top: 20px;
+}
+#info-item img, #info-readmore img{
+    width: 90%;
+    height:auto;
+    margin-bottom: 20px;
+}
+.last-info .box-thongso{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin:0;
+    font-size:14px;
+}
+.last-info .box-thongso h6{
+    background-color: #ced4da;
+    padding:10px;
+    text-align: center;
+}
+#item-star h2{
+    margin-left:30px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+#detail-img img{
+    width: 90%;
+    height:auto;
+    margin:20px;
+}
+.readmore {
+    width: 140px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #288ad6;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 1px solid #288ad6;
+    border-radius: 4px;
+    text-align: center;
+}
+.readmore:hover{
+    color: white  ;
+    background-color:#288ad6;
+}
+.link{
+    text-transform: uppercase;
+    color: #2186C4;
+    font-size: 13px;
+    background: white;
+    padding: 10px;
+    width: 100%;
+}
+.last-info{
+    background-color:white;
+}

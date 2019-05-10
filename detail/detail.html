@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="../lib/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="../lib/font.css"> -->
+    <link rel="stylesheet" href="../source/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="details.js"></script>
+
+    <title>SmartBuy</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header-content" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a href="../source/html.html">
+                    <img src="../img/header/logo.png" alt="Not found"></a>
+                <form class="form-inline">
+                    <input class="search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success mr-sm-2 " type="submit">Search</button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=dienthoai"><i class="fas fa-mobile-alt fa-2x"></i><br>Điện
+                                thoại</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=dienthoai&brand=iphone">iphone</a></li>
+                                    <li> <a href="../brand/brand.html?type=dienthoai&brand=samsung">samsung</a></li>
+                                    <li> <a href="../brand/brand.html?type=dienthoai&brand=sony">sony</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=laptop"><i class="fas fa-laptop fa-2x"></i><br>Laptop</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=laptop&brand=asus">Asus</a></li>
+                                    <li> <a href="../brand/brand.html?type=laptop&brand=dell">Dell</a></li>
+                                    <li> <a href="../brand/brand.html?type=laptop&brand=hp">HP</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=tivi"><i class="fas fa-tv fa-2x"></i><br>Tivi</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=tivi&brand=lg">LG</a></li>
+                                    <li> <a href="../brand/brand.html?type=tivi&brand=samsung">Samsung</a></li>
+                                    <li> <a href="../brand/brand.html?type=tivi&brand=sony">Sony</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=mayanh"><i class="fas fa-camera fa-2x"></i><br>Máy
+                                Ảnh</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=mayanh&brand=canon">Canon</a></li>
+                                    <li> <a href="../brand/brand.html?type=mayanh&brand=nikon">Nikon</a></li>
+                                    <li> <a href="../brand/brand.html?type=mayanh&brand=sony">Sony</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=phukien"><i class="fas fa-headphones fa-2x"></i><br>Phụ
+                                kiện</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=phukien&brand=tainghe">Tai nghe</a></li>
+                                    <li> <a href="../brand/brand.html?type=phukien&brand=loa">Loa</a></li>
+                                    <li> <a href="../brand/brand.html?type=phukien&brand=pinduphong">pin dự phòng</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=diengiadung"><i class="fas fa-blender fa-2x"></i><br>Điện
+                                gia dụng</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=diengiadung&brand=noicomdien">Nồi cơm điện</a></li>
+                                    <li> <a href="../brand/brand.html?type=diengiadung&brand=mayxaysinhto">Máy xay sinh
+                                            tố </a></li>
+                                    <li> <a href="../brand/brand.html?type=diengiadung&brand=lovisong">Lò vi sóng</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <a href="../giohang/giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng </a>
+                </div>
+
+            </nav>
+            <div class="clear-float"></div>
+    </header>
+
+    <section>
+        <div id="section-content" class=" container">
+              
+            <div class="link"> <span>Home > </span><span id="href-type"></span><span id="href-brand"> > </span><span id="href-name"> > </span></div>
+            <div class="hinh-quangcao" > <img style="width:100%" src="../img/quangcao/14_11_2018_11_00_57_1200x65.png" alt=""></div>
+              
+            <div class="detail">  
+                <div id="item-star" style="float:left">
+
+                </div>
+                <div style="color: orange; float: left; padding:25px 10px">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span style="color:gray"><i class="fas fa-star"></i></span>
+                    <a style="text-decoration: none" href="#">98 đánh giá</a>
+                </div>
+                <div class="clear-float"></div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-md-7">
+                        <div id="detail-img" class="detail-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div>
+                            <span>Giá tại TP.HCM: </span><strong id="gia-item" style="font-size:30px" class="gia"></strong>
+                            <p class="float-left" style="color:green; font-size: 22px"><b>CÒN HÀNG</b></p>
+                            <a class="float-right" style="background-color:#fd6e1d; border-radius: 10px;color:white;padding:2px 4px">
+                                Trả góp 0% </a>
+                            <div class="clear-float"></div>
+                            <p style="font-size:15px;color:gray"> Miễn phí giao hàng thu tiền ( COD free ) </p>
+                            <ul style="padding:0 0 0 15px;font-size:13px;background-color: #eff9ff">
+                                <li><b>Giảm tới 1% </b>giá hóa đơn</li>
+                                <li><b>Trả góp 0%</b> với thẻ tín dụng ngân hàng (tối thiểu 3 triệu) </li>
+                                <li><b> Miễn phí</b> cà thẻ (ngoại trừ AMEX, UnionPay & JCB)</li>
+                            </ul>
+                            <div style="font-size:13px; background-color:#eff9ff"><img src="https://cdn.tgdd.vn/dmx2016/Content/images/promotezalopay.png"
+                                    alt="Zalo Pay"> Giảm <strong>50%</strong> (tối đa <strong>250.000đ</strong>) khi
+                                thanh toán qua ZaloPay cho khách hàng mới.
+                                <a href="#">Click xem chi tiết</a></div>
+
+                        </div>
+
+                        <div class="button">
+                                <button class="button-muangay">
+                                    <p class="thongso"><b>MUA NGAY</b></p>
+                                    <p class="thongso">Giao tận nơi hoặc tới cửa hàng xem hàng</p>
+                                </button>
+                            <div class="row">
+                                <div class="col-6">
+                                        <button onclick="buy()"  class="button-tragop">
+                                            <p class="thongso"><b >THÊM VÀO GIỎ</b></p>
+                                            <p class="thongso">Add to cart</p>
+                                            
+                                        </button>
+                                   </div>
+                                <div class="col-6">
+                                       <button class="button-tragop">
+                                            <p class="thongso"><b> MUA TRẢ GÓP</b></p>
+                                            <p class="thongso">Thủ tục đơn giản</p>
+                                            
+                                       </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align:center; margin-top:5px">
+                            <span>Gọi đặt mua: </span> <span style="color:red">0377220797 </span> <span>(7:00-22:00)</span>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-12 box">
+                        <div class="box1">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Đặt giữ hàng tại SmartBuy</span>
+                        </div>
+                        <div class="box2">
+                            <p>Bộ bán hàng chuẩn: <b>Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp, Cây lấy sim</b></p>
+                            <p>Giao hàng miễn phí trong<b> 2 tiếng</b> (nếu đặt hàng sau 19h SmartBuy sẽ giao hàng vào
+                                hôm sau)</p>
+                            <span><b>1 đổi 1 trong 1 tháng với sản phẩm lỗi</b></span>
+
+                        </div>
+                        <img style="width:100%" src="../img/quangcao/banner-cheo-desktop.png" alt="">
+                    </div>
+                </div>
+                <div class="last-info">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div id="info-item">
+                            </div>
+                            <div style="display:none" id="info-readmore"></div>
+                            <div id="btn"  onclick="readmore()" class="readmore">
+                                <span>More</span>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-4
+                         col-sm-12 col-xs-12">
+                            <div class="box-thongso">                            
+                                <div id="detail-item"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+        <div id="footer-content" class="container">
+            <div class="footer-item row">
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>Thông Tin Liên Hệ</h5>
+                    Gọi mua hàng: <span class="sdt">0377220797</span><br>
+                    Khiếu nại, góp ý: <span>0377220797</span><br>
+                    Thời gian phục vụ: <span><i>8h-22h</i></span><br>
+                    Email: <a href="mailto:tranthanhhiep1997@.com">tranthanhhiep1997@gmail.com</a>
+                </div>
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>Phương thức thanh toán</h5>
+                    <div class="logo-png">
+                        <img src="../img/logo-png/005-visa.png" alt="">
+                        <img src="../img/logo-png/006-jcb.png" alt="">
+                        <img src="../img/logo-png/007-atm.png" alt="">
+                        <img src="../img/logo-png/008-mastercard.png" alt="">
+                        <img src="../img/logo-png/009-money.png" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>kết nối với chúng tôi</h5>
+                    <div class="logo-png">
+                        <a href="https://www.facebook.com/"><img src="../img/logo-png/001-facebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/"> <img src="../img/logo-png/002-youtube.png" alt=""></a>
+                        <a href="https://www.google.com/"> <img src="../img/logo-png/004-google-plus.png" alt=""></a>
+                        <a href="https://twitter.com"> <img src="../img/logo-png/003-twitter.png" alt=""></a>
+
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>Hệ thống cửa hàng </h5>
+                    <div>
+                        Khu vực <select name="" id="chinhanh">
+                            <option value="1"> Hà Nội</option>
+                            <option value="2"> Hồ Chí Minh</option>
+                            <option value="3"> ĐăkLăk</option>
+
+                        </select> <button onclick="chon()"><i class="fas fa-search"></i></button>
+                        <p id="output"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear-float"></div>
+    </footer>
+    </div>
+</body>
+<script src="../js/js.js"></script>
+<script src="cart.js"></script>
+
+</html>

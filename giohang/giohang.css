@@ -1,0 +1,87 @@
+#item-giohang{
+    
+}
+ #item-giohang .product img{
+    width: 20%;
+    height: 20%;
+}
+#item-giohang .product .gia-giohang{
+    color:red;
+    font-size:20px;
+ 
+}
+#item-giohang .product .soluong-giohang{
+
+}
+#item-giohang .product .name-giohang{
+
+} 
+#item-giohang .product{
+    background-color: white;
+    padding:20px;
+    margin-bottom: 10px;
+}
+.thanhtoan{
+    background-color: white;
+    padding:10px 20px;
+}
+.thanhtoan h4{
+    text-align: center;
+    text-transform: uppercase;
+    color: #2186C4;
+}
+.button-xacnhan{
+    background-color: #2186C4;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    font-size:18px;
+    padding:10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+.button-xacnhan:hover{
+    background-color: white ;
+    color:#2186C4;
+    border: #2186C4 1px solid;
+}
+.button-huybo{
+    background-color: #fd6e1d;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    font-size:18px;
+    padding:10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+.button-huybo:hover{
+    background-color: white ;
+    color:#fd6e1d;
+    border: #fd6e1d 1px solid;
+}
+.table .a p{
+    font-size:9px;
+}
+.a{
+    font-size:14px;
+}
+.tongCong{
+    color:red;
+    font-size:25px;
+}
+.product button{
+    border: none;
+    background-color: white;
+    color:black;
+    width: 30px;
+    height:30px;
+    margin-bottom: 1px;
+    border: 1px solid #2186C4;
+}
+.product button:hover{
+    background-color: #2186C4;
+    color:white;
+}

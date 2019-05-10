@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="../lib/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="../lib/font.css"> -->
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script-page.js"></script>
+
+    <title>SmartBuy</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header-content" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a href="../source/html.html">
+                    <img src="../img/header/logo.png" alt="Not found">
+                </a>
+                <form id="output_search" action="../theloai/theloai.html" class="form-inline">
+                    <input id="input_search" class="search mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button onclick="Search()" class="btn btn-outline-success mr-sm-2 " type="submit">Search</button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=dienthoai"><i class="fas fa-mobile-alt fa-2x"></i><br>Điện
+                                thoại</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=dienthoai&brand=iphone">iphone</a></li>
+                                    <li> <a href="../brand/brand.html?type=dienthoai&brand=samsung">samsung</a></li>
+                                    <li> <a href="../brand/brand.html?type=dienthoai&brand=sony">sony</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=laptop"><i class="fas fa-laptop fa-2x"></i><br>Laptop</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=laptop&brand=asus">Asus</a></li>
+                                    <li> <a href="../brand/brand.html?type=laptop&brand=dell">Dell</a></li>
+                                    <li> <a href="../brand/brand.html?type=laptop&brand=hp">HP</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=tivi"><i class="fas fa-tv fa-2x"></i><br>Tivi</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=tivi&brand=lg">LG</a></li>
+                                    <li> <a href="../brand/brand.html?type=tivi&brand=samsung">Samsung</a></li>
+                                    <li> <a href="../brand/brand.html?type=tivi&brand=sony">Sony</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=mayanh"><i class="fas fa-camera fa-2x"></i><br>Máy
+                                Ảnh</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=mayanh&brand=canon">Canon</a></li>
+                                    <li> <a href="../brand/brand.html?type=mayanh&brand=nikon">Nikon</a></li>
+                                    <li> <a href="../brand/brand.html?type=mayanh&brand=sony">Sony</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=phukien"><i class="fas fa-headphones fa-2x"></i><br>Phụ
+                                kiện</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=phukien&brand=tainghe">Tai nghe</a></li>
+                                    <li> <a href="../brand/brand.html?type=phukien&brand=loa">Loa</a></li>
+                                    <li> <a href="../brand/brand.html?type=phukien&brand=pinduphong">pin dự phòng</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../theloai/theloai.html?type=diengiadung"><i class="fas fa-blender fa-2x"></i><br>Điện
+                                gia dụng</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li> <a href="../brand/brand.html?type=diengiadung&brand=noicomdien">Nồi cơm điện</a></li>
+                                    <li> <a href="../brand/brand.html?type=diengiadung&brand=mayxaysinhto">Máy xay sinh
+                                            tố </a></li>
+                                    <li> <a href="../brand/brand.html?type=diengiadung&brand=lovisong">Lò vi sóng</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <a href="../giohang/giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng </a>
+                </div>
+
+            </nav>
+            <div class="clear-float"></div>
+    </header>
+
+    <section>
+
+        <div id="section-content" class=" container">
+            <div class="home row">
+                <div class="img-slider col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../img//quangcao/18_10_2018_11_47_02_Gia-Dung-20-10-690-300.png"
+                                    alt="not found">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/quangcao/19_10_2018_07_17_53_iPhoneNEW-690-300.png"
+                                    alt="not found">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/quangcao/09_10_2018_09_46_20_Pana-MG-690-300.png"
+                                    alt="not found">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/quangcao/28_09_2018_14_28_06_Big-May-Giat-T10-690-300.png"
+                                    alt="not found">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../img/quangcao/28_09_2018_16_10_29_MayNuocNong-Chung-690-300.png"
+                                    alt="not found">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-news col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <h3>KINH NGHIỆM HAY</h3>
+                    <div class="scrollbar">
+                        <ul>
+                            <li></li>
+                            <li><a href="">Màn hình Tivi bị sọc, nguyên nhân và cách khắc phục</a></li>
+                            <li><a href="">Nên mua điều hoà máy lạnh hãng nào tốt nhất hiện nay, loại nào phù hợp với
+                                    bạn nhất?</a></li>
+                            <li><a href="">Chi tiết cách lấy lại mật khẩu Facebook bị mất bằng email hoặc số điện thoại</a></li>
+                            <li><a href="">Những món quà gia dụng có thể mua tặng người phụ nữ thân yêu ngày 20/10</a></li>
+                            <li><a href="">Nên mua điều hoà máy lạnh hãng nào tốt nhất hiện nay, loại nào phù hợp với
+                                    bạn nhất?</a></li>
+                            <li><a href="">Chi tiết cách lấy lại mật khẩu Facebook bị mất bằng email hoặc số điện thoại</a></li>
+                            <li><a href="">Những món quà gia dụng có thể mua tặng người phụ nữ thân yêu ngày 20/10</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear-float"></div>
+            </div>
+            <div class="hinh-quangcao"> <img style="width:100%" src="../img/quangcao/14_11_2018_11_00_57_1200x65.png"
+                    alt=""></div>
+            <div class="info">
+                <div class="dienthoai sanpham">
+                    <div class="header-infor">
+                        <a href="../theloai/theloai.html?type=dienthoai">
+                            <h2>ĐIỆN THOẠI</h2>
+                        </a>
+                        <h4>Các mặt hàng nổi bật </h4>
+                        <a class="carousel-control-prev" href="#carousel-dienthoai" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-dienthoai" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="clear-float"></div>
+                    </div>
+
+                    <div id="carousel-dienthoai" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="dt-iphone" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="dt-samsung" class=" row ">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div id="dt-sony" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="laptop sanpham">
+                    <div class="header-infor">
+                        <a href="../theloai/theloai.html?type=laptop">
+                            <h2>LAPTOP</h2>
+                        </a>
+                        <h4>Các mặt hàng nổi bật </h4>
+                        <a class="carousel-control-prev" href="#carousel-laptop" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-laptop" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="clear-float"></div>
+                    </div>
+                    <div id="carousel-laptop" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="laptop-asus" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="laptop-dell" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="laptop-hp" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tivi sanpham">
+                    <div class="header-infor">
+                        <a href="../theloai/theloai.html?type=tivi">
+                            <h2>TIVI</h2>
+                        </a>
+                        <h4>Các mặt hàng nổi bật </h4>
+                        <a class="carousel-control-prev" href="#carousel-tivi" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-tivi" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="clear-float"></div>
+                    </div>
+                    <div id="carousel-tivi" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="tivi-sony" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="tivi-lg" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="tivi-samsung" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mayanh sanpham">
+                    <div class="header-infor">
+                        <a href="../theloai/theloai.html?type=mayanh">
+                        <h2>MÁY ẢNH</h2>
+                        </a>
+                        <h4>Các mặt hàng nổi bật </h4>
+                        <a class="carousel-control-prev" href="#carousel-mayanh" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-mayanh" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="clear-float"></div>
+                    </div>
+                    <div id="carousel-mayanh" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="mayanh-canon" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="mayanh-nikon" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="mayanh-sony" class=" row">
+
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="phukien sanpham">
+                    <div class="header-infor">
+                        <a href="../theloai/theloai.html?type=phukien">
+                            <h2>PHỤ KIỆN</h2>
+                        </a>
+                        <h4>Các mặt hàng nổi bật </h4>
+                        <a class="carousel-control-prev" href="#carousel-phukien" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-phukien" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="clear-float"></div>
+                    </div>
+                    <div id="carousel-phukien" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="phukien-tainghe" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="phukien-loa" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="phukien-pinduphong" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="diengiadung sanpham">
+                    <div class="header-infor">
+                        <a href="../theloai/theloai.html?type=diengiadung">
+                            <h2>ĐIỆN GIA DỤNG</h2>
+                        </a>
+                        <h4>Các mặt hàng nổi bật </h4>
+                        <a class="carousel-control-prev" href="#carousel-diengiadung" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-diengiadung" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        <div class="clear-float"></div>
+                    </div>
+                    <div id="carousel-diengiadung" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="diengiadung-lovisong" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="diengiadung-mayxaysinhto" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="diengiadung-noicomdien" class=" row">
+                                </div>
+                                <div class="clear-float"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+        <div id="footer-content" class="container">
+            <div class="footer-item row">
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>Thông Tin Liên Hệ</h5>
+                    Gọi mua hàng: <span class="sdt">0377220797</span><br>
+                    Khiếu nại, góp ý: <span>0377220797</span><br>
+                    Thời gian phục vụ: <span><i>8h-22h</i></span><br>
+                    Email: <a href="mailto:tranthanhhiep1997@.com">tranthanhhiep1997@gmail.com</a>
+                </div>
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>Phương thức thanh toán</h5>
+                    <div class="logo-png">
+                        <img src="../img/logo-png/005-visa.png" alt="">
+                        <img src="../img/logo-png/006-jcb.png" alt="">
+                        <img src="../img/logo-png/007-atm.png" alt="">
+                        <img src="../img/logo-png/008-mastercard.png" alt="">
+                        <img src="../img/logo-png/009-money.png" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>kết nối với chúng tôi</h5>
+                    <div class="logo-png">
+                        <a href="https://www.facebook.com/"><img src="../img/logo-png/001-facebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/"> <img src="../img/logo-png/002-youtube.png" alt=""></a>
+                        <a href="https://www.google.com/"> <img src="../img/logo-png/004-google-plus.png" alt=""></a>
+                        <a href="https://twitter.com"> <img src="../img/logo-png/003-twitter.png" alt=""></a>
+
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <h5>Hệ thống cửa hàng </h5>
+                    <div>
+                        Khu vực <select name="" id="chinhanh">
+                            <option value="1"> Hà Nội</option>
+                            <option value="2"> Hồ Chí Minh</option>
+                            <option value="3"> ĐăkLăk</option>
+
+                        </select> <button onclick="chon()"><i class="fas fa-search"></i></button>
+                        <p id="output"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clear-float"></div>
+    </footer>
+</body>
+<script src="../js/js.js"></script>
+
+</html>
